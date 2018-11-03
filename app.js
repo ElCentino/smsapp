@@ -21,7 +21,7 @@ app.use('/', indexRoute);
 
 const server = http.createServer(app);
 
-server.listen(3000).once('listening', err => {
+server.listen(process.env.PORT || 3000).once('listening', err => {
 
     if (err) throw err;
 
